@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Partytime — Video link preview</title>
+  <meta name="description" content="Try Partytime's video preview by sharing this link in Messages.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://agent-1-ctrl.github.io/partytime-video-preview/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Partytime">
+  <meta property="og:title" content="Partytime">
+  <meta property="og:description" content="Try Partytime's video link preview.">
+  <meta property="og:url" content="https://agent-1-ctrl.github.io/partytime-video-preview/">
+  <meta property="og:image" content="https://agent-1-ctrl.github.io/partytime-video-preview/preview.jpg">
+  <meta property="og:image:secure_url" content="https://agent-1-ctrl.github.io/partytime-video-preview/preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1920">
+  <meta property="og:image:alt" content="Two block-style characters from the Partytime introduction video">
+  <meta property="og:video" content="https://cdn.partytime.gg/assets/intro-partytime-video-v2.mp4">
+  <meta property="og:video:secure_url" content="https://cdn.partytime.gg/assets/intro-partytime-video-v2.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1080">
+  <meta property="og:video:height" content="1920">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Partytime">
+  <meta name="twitter:description" content="Try Partytime's video link preview.">
+  <meta name="twitter:image" content="https://agent-1-ctrl.github.io/partytime-video-preview/preview.jpg">
+  <meta name="twitter:image:alt" content="Two block-style characters from the Partytime introduction video">
+  <style>
+    :root{color-scheme:dark;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#121313;color:#f5f5ef}
+    *{box-sizing:border-box}body{margin:0}main{max-width:1000px;margin:0 auto;padding:48px 28px 60px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:64px}.wordmark{font-size:23px;font-weight:750;letter-spacing:-.8px}.badge{font-size:12px;color:#b6b8b0;border:1px solid #3b3d37;border-radius:30px;padding:7px 12px;white-space:nowrap}
+    .layout{display:grid;grid-template-columns:1fr 320px;gap:80px;align-items:center}h1{font-size:clamp(38px,5.5vw,58px);letter-spacing:-2px;line-height:1.05;margin:0 0 24px;max-width:500px}.intro{font-size:18px;color:#b6b8b0;line-height:1.6;margin:0 0 32px;max-width:430px}
+    ol{padding-left:22px;color:#e0e1da;line-height:1.5;margin:0 0 32px}li{padding:0 0 10px 6px}button{appearance:none;border:0;background:#dbff80;color:#161c0a;font:inherit;font-weight:700;border-radius:12px;padding:16px 24px;cursor:pointer;min-height:52px}button:hover{background:#e7ffb0}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #dbff80;outline-offset:5px}
+    .status{min-height:22px;margin:12px 0 0;color:#c5d4a5;font-size:14px}.fallback{margin-top:14px}.fallback input{width:100%;padding:12px;border:1px solid #777;border-radius:8px;background:#242624;color:#eee;font:inherit;font-size:12px}.fallback label{display:block;margin-bottom:8px;font-size:13px}
+    .card{margin:0;border-radius:22px;overflow:hidden;background:#263434;box-shadow:0 24px 70px #0005}video{width:100%;aspect-ratio:9/16;display:block;object-fit:cover;background:#b7d2d7}.caption{padding:16px 18px}.caption strong{display:block;font-size:17px}.caption span{display:block;color:#bbc5c3;font-size:12px;margin-top:5px;word-break:break-word}
+    footer{margin-top:58px;color:#7f847c;font-size:13px;line-height:1.6;max-width:620px}footer a{color:#c1c6ba;text-decoration:underline;text-underline-offset:3px}
+    @media(max-width:720px){main{padding:26px 22px 36px}header{margin-bottom:40px}.layout{grid-template-columns:1fr;gap:28px}h1{font-size:42px}.intro{font-size:16px}.card{width:min(100%,300px);justify-self:center}footer{margin-top:32px}button{width:100%}}
+  </style>
+</head>
+<body>
+  <main>
+    <header><span class="wordmark">Partytime</span><span class="badge">Link preview test</span></header>
+    <div class="layout">
+      <section>
+        <h1>A little motion.<br>Inside your message.</h1>
+        <p class="intro">Share this page to try the Partytime video preview in Messages.</p>
+        <ol><li>Copy the link below.</li><li>Paste it into a Messages conversation and send it.</li><li>Give the preview a moment to load. Tap it if playback doesn’t start.</li></ol>
+        <button id="copy" type="button">Copy test link</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <div class="fallback" id="fallback" hidden><label for="link">Copy this link:</label><input id="link" readonly value="https://agent-1-ctrl.github.io/partytime-video-preview/"></div>
+      </section>
+      <figure class="card">
+        <video controls muted playsinline preload="metadata" poster="preview.jpg" aria-label="Partytime introduction video">
+          <source src="https://cdn.partytime.gg/assets/intro-partytime-video-v2.mp4" type="video/mp4">
+          <a href="https://cdn.partytime.gg/assets/intro-partytime-video-v2.mp4">Watch the Partytime video</a>
+        </video>
+        <figcaption class="caption"><strong>Partytime</strong><span>Video link preview</span></figcaption>
+      </figure>
+    </div>
+    <footer>This is a separate test page. Preview appearance and playback depend on the messaging app and device settings. <a href="https://partytime.gg/">Visit partytime.gg</a>.</footer>
+  </main>
+  <script>
+    document.getElementById('copy').addEventListener('click', async () => {
+      const url = 'https://agent-1-ctrl.github.io/partytime-video-preview/';
+      try {
+        await navigator.clipboard.writeText(url);
+        document.getElementById('status').textContent = 'Copied. Paste it into Messages.';
+        document.getElementById('copy').textContent = 'Link copied';
+      } catch {
+        document.getElementById('fallback').hidden = false;
+        document.getElementById('link').select();
+        document.getElementById('status').textContent = 'Select and copy the link below.';
+      }
+    });
+  </script>
+</body>
+</html>
